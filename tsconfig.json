@@ -1,7 +1,10 @@
 {
 	"compilerOptions": {
 		"outDir": "./.tsbuild",
-		"types": ["@cloudflare/workers-types", "node"],
+		"types": [
+			"@cloudflare/workers-types",
+			"node"
+		],
 		"composite": true,
 		"declaration": true,
 		"declarationMap": true,
@@ -13,10 +16,14 @@
 		"resolveJsonModule": true,
 		"incremental": true,
 		"jsx": "react-jsx",
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ESNext"
+		],
 		"module": "esnext",
 		"target": "esnext",
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitAny": true,
 		"noImplicitReturns": true,
@@ -29,7 +36,15 @@
 		"useDefineForClassFields": true,
 		"noImplicitOverride": true
 	},
-	"exclude": ["node_modules"],
-	"include": ["client", "shared", "worker"],
-	"files": ["./vite.config.ts"]
+	"exclude": [
+		"node_modules"
+	],
+	"include": [
+		"client",
+		"shared",
+		"worker"
+	],
+	"files": [
+		"./vite.config.ts"
+	]
 }
